@@ -56,9 +56,18 @@ body {
   color: white;
 }
 
+.footer__newsletter-form fieldset {
+  display: flex;
+  column-gap: 1rem;
+}
+
 .footer__newsletter-form input,
 .footer__newsletter-form input::placeholder {
   color: white;
+}
+
+.footer__newsletter-form input[type="submit"] {
+  flex-grow: 1;
 }
 
 .footer > div:last-child {
