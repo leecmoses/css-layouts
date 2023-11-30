@@ -1,0 +1,96 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, min-content);
+  padding: 8rem;
+  gap: 2rem;
+
+  height: 100vh;
+  position: relative;
+}
+
+.contact__title:before {
+  z-index: -1;
+  content: "";
+  height: 50%;
+  width: 100%;
+  background-color: rgba(237, 251, 255, 0.731);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact__title {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+
+  line-height: 1;
+}
+
+.contact__title span {
+  display: block;
+}
+
+.contact__location,
+.contact__email {
+  grid-row: 6 / span 2;
+  display: grid;
+  grid-template-columns: 3rem repeat(3, 1fr);
+}
+
+.contact__location {
+  grid-column: 1 / span 3;
+}
+
+.contact__email {
+  grid-column: 4 / span 3;
+}
+
+.contact__location-icon,
+.contact__email-icon {
+  font-size: 2rem;
+  color: rgba(64, 183, 222, 0.731);
+}
+
+.contact__location-title,
+.contact__email-title,
+.contact__location-address,
+.contact__email-address {
+  grid-column: 2 / -1;
+}
+
+.contact__form {
+  background: white;
+  padding: 4rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px lightgray;
+  grid-column: 7 / -1;
+  grid-row: 1 / -1;
+}
+
+.contact__form {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact__form fieldset {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__form fieldset > input,
+.contact__form fieldset > textarea {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.contact__form fieldset > textarea {
+  height: 5rem;
+}
+
+.contact__form input[type="submit"] {
+  background-color: rgb(68, 68, 242);
+  color: white;
+}
