@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  gap: 2rem;
+
+  padding: 4rem;
+  height: 100vh;
+
+  position: relative;
+}
+
+.header__img img {
+  object-position: center 15%;
+}
+
+.header__content {
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header__title {
+  color: #fb5794;
+  line-height: 0.85;
+}
+
+.header__link {
+  background-color: #fb5794;
+  align-self: flex-start;
+  color: white;
+}
+
+.header__content > div:last-child {
+  position: absolute;
+  bottom: 3rem;
+  right: 10rem;
+
+  display: flex;
+}
+
+.header__content > div:last-child i {
+  color: #fb5794;
+  border: 1px solid #fb5794;
+  padding: 1rem;
+  cursor: pointer;
+}

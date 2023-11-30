@@ -1,0 +1,53 @@
+.cta {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  padding: 8rem;
+}
+
+.cta__content {
+  z-index: 1;
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 2;
+
+  background-color: navy;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+  padding: 3rem;
+
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+
+  border-radius: 1rem 0 0 1rem;
+}
+
+.cta__title {
+  line-height: 0.9;
+}
+
+.cta__content span {
+  display: block;
+  font-weight: normal;
+}
+
+.cta__btn {
+  align-self: flex-start;
+  background-color: lightgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.cta__image {
+  grid-column: 6 / -1;
+  grid-row: 1 / span 2;
+}
+
+.cta__image img {
+  /* object-fit: cover; */
+  border-radius: 0 1rem 1rem 0;
+}

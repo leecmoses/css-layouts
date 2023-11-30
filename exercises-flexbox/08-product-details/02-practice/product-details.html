@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../general-styles.css" />
+    <link rel="stylesheet" href="product-details.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <main class="product">
+      <section class="product__images">
+        <figure class="product__image--display">
+          <img src="../../images/8.1.jpg" alt="Shirt" loading="lazy" />
+        </figure>
+
+        <div>
+          <figure class="product__image--other">
+            <img src="../../images/8.2.jpg" alt="Shirt" loading="lazy" />
+          </figure>
+          <figure class="product__image--other">
+            <img src="../../images/8.3.jpg" alt="Shirt" loading="lazy" />
+          </figure>
+          <figure class="product__image--other">
+            <img src="../../images/8.4.jpg" alt="Shirt" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="product__info">
+        <h2 class="product__name">Men's Shirt</h2>
+
+        <div class="product__rating">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <h6>35 Ratings</h6>
+        </div>
+
+        <p class="product__desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+          ratione totam saepe quae. Autem quia ipsa excepturi facilis at id ab
+          nemo veritatis voluptatem?
+        </p>
+
+        <div>
+          <div class="product__quantity">
+            <h5>Quantity</h5>
+            <p>
+              <span>-</span>
+              <span>1</span>
+              <span>+</span>
+            </p>
+          </div>
+
+          <div class="product__price">
+            <h3>$29.00</h3>
+            <p>12% VAT Added</p>
+          </div>
+        </div>
+
+        <button class="product__cart">Add to cart</button>
+
+        <div class="product__details">
+          <h4>Product Details</h4>
+
+          <div class="product__size">
+            <h5>Size</h5>
+            <h5>Small, Medium, Large</h5>
+          </div>
+
+          <div class="product__color">
+            <h5>Color</h5>
+            <h5>White, Navy, Blue, Pink</h5>
+          </div>
+
+          <div class="product__size">
+            <h5>Brand</h5>
+            <h5>EL Merch</h5>
+          </div>
+        </div>
+
+        <div class="product__select-size">
+          <h4>Select Size</h4>
+
+          <ul>
+            <li>
+              <input type="radio" id="small" name="size" value="S" /><label
+                for="small"
+                >Small</label
+              >
+            </li>
+            <li>
+              <input type="radio" id="medium" name="size" value="M" /><label
+                for="medium"
+                >Medium</label
+              >
+            </li>
+            <li>
+              <input type="radio" id="large" name="size" value="L" /><label
+                for="large"
+                >Large</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="product__select-color">
+          <h4>Select Color</h4>
+
+          <ul>
+            <li>
+              <input type="radio" id="white" name="color" value="white" /><label
+                for="white"
+              ></label>
+            </li>
+            <li>
+              <input type="radio" id="navy" name="color" value="navy" /><label
+                for="navy"
+              ></label>
+            </li>
+            <li>
+              <input type="radio" id="blue" name="color" value="blue" /><label
+                for="blue"
+              ></label>
+            </li>
+            <li>
+              <input type="radio" id="pink" name="color" value="pink" /><label
+                for="pink"
+              ></label>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
