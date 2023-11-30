@@ -1,0 +1,83 @@
+.team {
+  display: grid;
+  gap: 6rem;
+
+  padding: 4rem;
+  background-color: mintcream;
+}
+
+.team__content {
+  justify-self: center;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 1rem;
+
+  text-align: center;
+}
+
+.team__desc span {
+  display: block;
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team__member {
+  display: grid;
+  grid-template-rows: 15rem 5rem auto;
+  place-content: center;
+  justify-items: center;
+  gap: 2rem;
+
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.team__member:first-child .team__member-image img,
+.team__member:last-child .team__member-image img {
+  object-position: center 20%;
+}
+
+.team__member:nth-child(2) .team__member-image img,
+.team__member:nth-child(3) .team__member-image img {
+  object-position: 20% center;
+}
+
+.team__member-image {
+  height: 15rem;
+  width: 15rem;
+}
+
+.team__member-image img {
+  border-radius: 50%;
+}
+
+.team__member-name,
+.team__member-role {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.team__member-role {
+  align-self: end;
+
+  color: rgb(130, 129, 130);
+}
+
+.team__member-socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.team__member-socials i {
+  background-color: mintcream;
+  padding: 1rem;
+  border-radius: 50%;
+}
