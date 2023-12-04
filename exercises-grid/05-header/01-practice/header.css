@@ -1,0 +1,85 @@
+.header {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.header__main,
+.header__aside {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+
+  padding: 4rem;
+}
+
+.main__hero,
+.aside__hero {
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.main__hero img {
+  object-position: left center;
+}
+
+.aside__hero img {
+  object-position: right center;
+}
+
+.main__content,
+.aside__content {
+  grid-row: 2 / span 1;
+
+  color: white;
+
+  display: grid;
+  align-content: center;
+}
+
+.aside__content {
+  justify-content: end;
+}
+
+.main__title {
+  text-decoration: underline;
+  line-height: 1.1;
+}
+
+.main__title span,
+.aside__title span {
+  display: block;
+}
+
+.main__button {
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgba(133 133 133 / 0.3);
+  color: white;
+}
+
+.main__dots {
+  grid-row: 3 / span 1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  place-self: center;
+}
+
+.main__dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.main__dot:first-child {
+  width: 2rem;
+}
