@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../general-styles.css" />
+    <link rel="stylesheet" href="sign-up-form.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <main class="sign-up">
+      <section class="sign-up__content">
+        <h2 class="content__title">Sign Up</h2>
+        <p class="content__para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          <span>Lorem ipsum dolor sit amet.</span>
+        </p>
+
+        <form action="" class="content__form">
+          <h4 class="form__title">Sign Up With</h4>
+
+          <fieldset class="form__alternative">
+            <a href="#">
+              <i class="fa-brands fa-google"></i>
+              Sign up with Google
+            </a>
+            <a href="#"
+              ><i class="fa-brands fa-facebook-f"></i>Sign up with Facebook</a
+            >
+          </fieldset>
+
+          <fieldset class="form__name">
+            <label for="username">Username</label>
+            <input id="username" type="text" />
+          </fieldset>
+
+          <fieldset class="form__email">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </fieldset>
+
+          <fieldset class="form__password">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </fieldset>
+
+          <fieldset class="form__terms">
+            <input type="checkbox" id="terms" />
+            <label for="terms">
+              I've read and agree with <a href="#">Terms of Service</a>, and
+              <a href="#">Privacy Policy</a>
+            </label>
+          </fieldset>
+
+          <input type="submit" class="form__submit" value="Create Account" />
+        </form>
+      </section>
+      <figure class="sign-up__img">
+        <img src="../../images/9.jpg" alt="Sign up" />
+      </figure>
+    </main>
+  </body>
+</html>

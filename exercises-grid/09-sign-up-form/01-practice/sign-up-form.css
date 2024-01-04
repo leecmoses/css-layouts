@@ -1,0 +1,91 @@
+.sign-up {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 6rem 3rem;
+}
+
+.sign-up > div:first-of-type {
+  grid-column: 1 / 2;
+
+  display: grid;
+  gap: 3rem;
+}
+
+.sign-up__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+}
+
+.options__title {
+  grid-column: 1 / -1;
+  color: blue;
+}
+
+.sign-up__options button {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.sign-up__options button:first-of-type {
+  background-color: orange;
+}
+
+.sign-up__options button:last-of-type {
+  background-color: blue;
+}
+
+.sign-up__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  font-weight: 700;
+}
+
+.sign-up__form > div {
+  display: grid;
+}
+
+.sign-up__form > div input {
+  background-color: rgb(211, 232, 239);
+  border: none;
+}
+
+.sign-up__form > div:nth-child(3),
+.sign-up__form > div:nth-child(4) {
+  grid-column: 1 / 3;
+}
+
+.sign-up__form > div:nth-child(4) {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1rem;
+}
+
+.sign-up__form > input[type="submit"] {
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.sign-up > div:last-of-type {
+  align-items: center;
+  grid-column: 2 / 3;
+}
+
+img {
+  object-fit: contain;
+}
