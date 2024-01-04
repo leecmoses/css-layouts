@@ -1,0 +1,77 @@
+.footer {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+  grid-template-rows: repeat(2, min-content);
+  background-color: #006e7f;
+  padding: 3rem 6rem;
+}
+
+a {
+  padding-left: 0;
+  color: white;
+}
+
+.footer__useful-links,
+.footer__shop,
+.footer__account,
+.footer__company,
+.footer__info {
+  color: white;
+
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__useful-links ul,
+.footer__shop ul,
+.footer__account ul,
+.footer__company ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__info {
+  justify-self: end;
+  justify-items: end;
+  text-align: end;
+}
+
+.info__socials i {
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+
+  background-color: white;
+  color: #006e7f;
+
+  border-radius: 50%;
+
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer > div:last-child {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+
+  border-top: 1px solid white;
+  color: white;
+
+  margin-top: 2rem;
+  padding: 3rem 0;
+}
+
+.info__payment-methods {
+  justify-self: end;
+}
+
+.info__payment-methods i {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
