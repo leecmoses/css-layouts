@@ -60,6 +60,7 @@ a {
   border: 1px solid lightgrey;
   text-align: center;
   color: white;
+  padding: 1rem;
 }
 
 .form__alternative a:first-child {
@@ -113,4 +114,8 @@ a {
 .form__submit {
   background-color: lightslategray;
   color: white !important;
+}
+
+.sign-up__img img {
+  object-fit: contain;
 }
